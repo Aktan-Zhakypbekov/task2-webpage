@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  background-color: aqua;
+}
+.nav {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+}
+.nav__navlinks {
+  background-color: cadetblue;
+  margin: 1.6rem;
+}
+.nav__navlinks__link {
+  background-color: rgb(220, 20, 187);
+}
+.introduction {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.introduction__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  width: max(700px, 65%);
+}
+.introduction__text__title {
+  background-color: blue;
+  margin: 1rem;
+  font-size: 1rem;
+}
+.introduction__text__quote {
+  background-color: blueviolet;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  margin: 1rem;
+}
+.introduction__text__button {
+  background-color: brown;
+  margin: 1rem;
+  font-size: 1rem;
+}
