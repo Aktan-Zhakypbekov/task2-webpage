@@ -32,6 +32,7 @@
   align-items: center;
   background-color: aqua;
   width: max(600px, 60%);
+  margin: 2rem 1rem 2rem 1rem;
 }
 .introduction__text__title {
   background-color: blue;
@@ -64,11 +65,11 @@
   justify-content: center;
   align-items: center;
   width: max(600px, 70%);
-  margin: 2rem;
+  margin: 2rem 1rem 2rem 1rem;
 }
 .services__text__title {
   background-color: blanchedalmond;
-  font-size: 2.2rem;
+  font-size: clamp(1.7rem, 5vw, 2.2rem);
   width: min(600px, 90%);
   margin: 1rem;
   text-align: center;
@@ -86,15 +87,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: min(800px, 90%);
   margin: 1rem;
-  height: 5rem;
 }
 .services__text__list__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 .services__text__list__item__img-container {
-  flex: 1;
   background-color: cadetblue;
 }
 .services__text__list__item__img-container img {
@@ -102,8 +102,8 @@
   max-height: 100%;
 }
 .services__text__list__item__description {
-  flex: 2;
   background-color: chartreuse;
+  padding: 0.7rem;
 }
 .description-title {
   font-size: 1rem;
@@ -121,6 +121,13 @@
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
 }
+
+@media (max-width: 800px) {
+  .services__text__list {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 .development {
   display: flex;
   flex-direction: column;
@@ -132,7 +139,7 @@
   background-color: crimson;
   width: max(600px, 72%);
   display: flex;
-  margin: 2rem;
+  margin: 2rem 1rem 2rem 1rem;
 }
 .development__quality__text {
   background-color: cyan;
@@ -175,21 +182,36 @@
   align-items: center;
   background-color: darkgreen;
   width: max(600px, 62%);
-  margin: 2rem;
+  margin: 2rem 1rem 2rem 1rem;
+}
+.development__our-projects__item {
+  background-color: aqua;
 }
 
-@media (max-width: 800px) {
-  .development__quality {
-    flex-direction: column;
-    width: 90%;
+@media (max-width: 1000px) {
+  .development {
+    flex-direction: row;
   }
   .development__our-projects {
+    flex-direction: column;
+    width: 40%;
+  }
+  .development__quality {
+    flex-direction: column;
+    width: min(400px, 90%);
+  }
+}
+@media (max-width: 450px) {
+  .development {
+    flex-direction: column;
+  }
+  .development__our-projects {
+    flex-direction: row;
     width: 90%;
   }
 }
 
 .specialization {
-  height: 86vh;
   background: linear-gradient(to bottom, #504dc2 10%, #5f12d0 50%, white 50%);
   display: flex;
   flex-direction: column;
@@ -197,21 +219,55 @@
   align-items: center;
 }
 .specialization__text {
-  background-color: darkmagenta;
-  width: max(600px, 72%);
+  background-color: rgb(0, 123, 139);
+  width: max(600px, 65%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 4rem;
+  margin: 4rem 1rem 1rem 1rem;
 }
+.specialization__text__title {
+  background-color: brown;
+  font-size: clamp(1.7rem, 5vw, 2.2rem);
+}
+.specialization__text__button {
+  border: none;
+  width: 200px;
+  height: 45px;
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+}
+
 .specialization__specialties {
-  background-color: rgba(111, 111, 111, 0.25);
+  background-color: rgb(139, 6, 6);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: max(600px, 72%);
-  margin-bottom: 4rem;
+  width: min(800px, 95%);
+  margin: 1rem 1rem 4rem 1rem;
 }
+.specialization__specialties__item {
+  background-color: chartreuse;
+  margin: 1rem;
+}
+.specialization__specialties__item__img-container {
+  background-color: darkgoldenrod;
+  width: 100%;
+  height: 14rem;
+}
+.specialization__specialties__item__img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+.specialization__specialties__item__category-name {
+  font-size: 1.2rem;
+}
+.specialization__specialties__item__category-description {
+  font-size: 1rem;
+}
+
 @media (max-width: 800px) {
   .specialization__specialties {
     flex-direction: column;
