@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   background-color: aqua;
-  width: max(700px, 65%);
+  width: max(600px, 60%);
 }
 .introduction__text__title {
   background-color: blue;
@@ -42,9 +42,214 @@
   background-color: blueviolet;
   font-size: clamp(2.2rem, 5vw, 3rem);
   margin: 1rem;
+  width: min(700px, 90%);
+  text-align: center;
 }
 .introduction__text__button {
   background-color: brown;
   margin: 1rem;
   font-size: 1rem;
+}
+
+.services {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services__text {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max(600px, 70%);
+  margin: 2rem;
+}
+.services__text__title {
+  background-color: blanchedalmond;
+  font-size: 2.2rem;
+  width: min(600px, 90%);
+  margin: 1rem;
+  text-align: center;
+}
+.services__text__quote {
+  background-color: blue;
+  font-size: 1rem;
+  width: min(500px, 90%);
+  margin: 1rem;
+  text-align: center;
+}
+.services__text__list {
+  background-color: blueviolet;
+  font-size: 1.175;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+  height: 5rem;
+}
+.services__text__list__item {
+  display: flex;
+}
+.services__text__list__item__img-container {
+  flex: 1;
+  background-color: cadetblue;
+}
+.services__text__list__item__img-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.services__text__list__item__description {
+  flex: 2;
+  background-color: chartreuse;
+}
+.description-title {
+  font-size: 1rem;
+}
+.description-quote {
+  font-size: 0.8rem;
+}
+.services__text__button {
+  font-size: 1rem;
+  margin: 1rem;
+  width: 200px;
+  height: 45px;
+  background: #4985ff;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+}
+.development {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(86, 121, 51);
+}
+.development__quality {
+  background-color: crimson;
+  width: max(600px, 72%);
+  display: flex;
+  margin: 2rem;
+}
+.development__quality__text {
+  background-color: cyan;
+  margin: 1rem;
+  flex: 1;
+}
+.development__quality__text__title {
+  background-color: teal;
+  font-size: clamp(1.7rem, 5vw, 2.2rem);
+  margin: 1rem;
+  margin-top: 2rem;
+}
+.development__quality__text__quote {
+  font-size: clamp(0.7rem, 5vw, 1rem);
+  margin: 1rem;
+}
+.development__quality__text__more-info-link {
+  font-size: 1rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.development__quality__img-container {
+  background-color: darkgoldenrod;
+  margin: 1rem;
+  flex: 1;
+}
+.development__quality__img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+}
+.development__our-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkgreen;
+  width: max(600px, 62%);
+  margin: 2rem;
+}
+
+@media (max-width: 800px) {
+  .development__quality {
+    flex-direction: column;
+    width: 90%;
+  }
+  .development__our-projects {
+    width: 90%;
+  }
+}
+
+.specialization {
+  height: 86vh;
+  background: linear-gradient(to bottom, #504dc2 10%, #5f12d0 50%, white 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.specialization__text {
+  background-color: darkmagenta;
+  width: max(600px, 72%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+.specialization__specialties {
+  background-color: rgba(111, 111, 111, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: max(600px, 72%);
+  margin-bottom: 4rem;
+}
+@media (max-width: 800px) {
+  .specialization__specialties {
+    flex-direction: column;
+    width: 90%;
+  }
+  .specialization__text {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.our-projects {
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+}
+.our-projects__text {
+  background-color: springgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.our-projects__text__title {
+  background-color: salmon;
+  margin: 1rem;
+}
+.our-projects__text__quote {
+  background-color: seagreen;
+  margin: 1rem;
+}
+.our-projects__text__examples {
+  background-color: sienna;
+  margin: 1rem;
+}
+.our-projects__text__button {
+  background-color: skyblue;
+  margin: 1rem;
 }
