@@ -554,7 +554,6 @@ body {
 @media (max-width: 1000px) {
   .work-video__content__sign-up__form {
     width: 60vw;
-    background-color: darkgreen;
   }
 }
 @media (max-width: 750px) {
